@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="movie_title">Movie Title</string>
+    <string name="rating">8.8 rating</string>
+    <string name="calendar">Calendar</string>
+    <string name="language">Language</string>
+    <string name="overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu lectus consequat,
+        eleifend augue vel, molestie orci. Phasellus pretium justo ut libero maximus rhoncus. Donec euismod, neque
+        et vehicula interdum, quam ligula egestas purus, in egestas velit orci at est. Cras at vestibulum augue.
+        Aliquam interdum aliquet turpis, in consectetur tortor vehicula sit amet. Fusce leo purus, tincidunt sit amet
+        blandit ut, eleifend eget diam. Fusce placerat dui vel ex blandit facilisis. Duis sit amet luctus turpis.
+        Donec sed eros eu felis placerat cursus.</string>
+</resources>
