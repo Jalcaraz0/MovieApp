@@ -11,14 +11,23 @@ abstract class AppDataBase:RoomDatabase() {
 
     abstract fun movieDaeo():MovieDao
     companion object {
+        @Volatile
         private var INSTANCE: AppDataBase? = null
         fun getDataBase(context: Context): AppDataBase {
-            INSTANCE = INSTANCE ?: Room.databaseBuilder(
+             return INSTANCE ?: synchronized(this){
+                 val instance=Room.databaseBuilder(context.applicationContext,
+                 AppDataBase::class.java,"movie_table").build()
+                 INSTANCE=instance
+                 instance
+             }
+
+
+           /* INSTANCE = INSTANCE ?: Room.databaseBuilder(
                 context.applicationContext,
                 AppDataBase::class.java,
                 "movie_table"
             ).build()
-            return INSTANCE!!
+            return INSTANCE!!*/
         }
     }
 }
